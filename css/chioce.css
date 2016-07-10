@@ -1,0 +1,325 @@
+@import url(reset.css);
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+body, html, .chioce {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  -webkit-user-select: none;
+  -webkit-font-size-adjust: none;
+  -webkit-tap-heightlight-color: transparent;
+  background: url(../img/3.png); }
+
+.chioce {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .chioce h3 {
+    height: 40%;
+    width: 100%; }
+  .chioce .pic {
+    width: 100%;
+    height: 60%; }
+  .chioce .box {
+    display: -webkit-box;
+    height: 100%; }
+  .chioce .love {
+    width: 100%;
+    height: 100%; }
+    .chioce .love h3 {
+      background: url(../img/4_03.png) no-repeat center center;
+      background-size: 70% 30%; }
+    .chioce .love .pic {
+      background: url(../img/4_07.png) no-repeat center top;
+      background-size: 70% 70%; }
+  .chioce .friend {
+    width: 100%;
+    height: 100%; }
+    .chioce .friend h3 {
+      background: url(../img/6_03.png) no-repeat center center;
+      background-size: 70% 30%; }
+    .chioce .friend .pic {
+      background: url(../img/6_07.png) no-repeat center top;
+      background-size: 70% 70%; }
+  .chioce .job {
+    width: 100%;
+    height: 100%; }
+    .chioce .job h3 {
+      background: url(../img/5_03.png) no-repeat center center;
+      background-size: 70% 30%; }
+    .chioce .job .pic {
+      background: url(../img/5_07.png) no-repeat center top;
+      background-size: 70% 70%; }
+
+.questions {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none; }
+  .questions:first-child {
+    display: block; }
+  .questions h1 {
+    width: 40px;
+    height: 35px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -20px; }
+    .questions h1 img {
+      width: 100%;
+      height: 100%; }
+  .questions .boxs {
+    width: 100%;
+    height: 100%;
+    display: none; }
+    .questions .boxs:first-child {
+      display: block; }
+  .questions .content {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box; }
+    .questions .content .swiper-wrapper {
+      width: 100%;
+      height: 100%; }
+  .questions .timi {
+    width: 100%;
+    height: 100%; }
+    .questions .timi img {
+      width: 100%;
+      height: 100%; }
+
+.project .boxs1 {
+  display: -webkit-box; }
+.project .swiper-slide {
+  height: 100%;
+  width: 100%; }
+  .project .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    box-flex: 1; }
+
+.project {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .project .swiper-button-prev {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 10; }
+  .project .swiper-button-next {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 10; }
+  .project .btn3 {
+    width: 40%;
+    height: 40px;
+    position: absolute;
+    left: 30%;
+    top: 85%;
+    color: green;
+    border: 1px solid green;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 40px; }
+
+.swiper-button-prev {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 10; }
+
+.swiper-button-next {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 10; }
+
+.btn {
+  width: 40%;
+  height: 40px;
+  position: absolute;
+  left: 30%;
+  top: 85%;
+  color: green;
+  border: 1px solid green;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 40px; }
+
+.result {
+  display: -webkit-box;
+  width: 100%;
+  height: 100%; }
+  .result .success {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../img/success.png) no-repeat;
+    background-size: 100% 100%; }
+    .result .success p {
+      width: 100%;
+      height: 80px;
+      line-height: 20px;
+      color: orange;
+      font-size: 12px;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 24%; }
+    .result .success .jg1 .again {
+      width: 50%;
+      height: 40px;
+      position: absolute;
+      left: 0;
+      bottom: 50px; }
+    .result .success .jg1 .xuan {
+      width: 50%;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      bottom: 50px; }
+    .result .success .jg1 a {
+      display: inline-block;
+      margin-left: 10%;
+      width: 80%;
+      height: 40px;
+      border: 2px solid green;
+      border-radius: 16px;
+      line-height: 40px;
+      text-align: center;
+      color: green;
+      font-size: 20px; }
+  .result .fail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../img/fail.png) no-repeat;
+    background-size: 100% 100%; }
+    .result .fail p {
+      width: 100%;
+      height: 80px;
+      line-height: 20px;
+      color: orange;
+      font-size: 12px;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 15%; }
+    .result .fail .jg2 .again {
+      width: 50%;
+      height: 40px;
+      position: absolute;
+      left: 0;
+      bottom: 50px; }
+    .result .fail .jg2 .huo {
+      width: 50%;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      bottom: 50px; }
+    .result .fail .jg2 a {
+      display: inline-block;
+      margin-left: 10%;
+      width: 80%;
+      height: 40px;
+      border: 2px solid green;
+      border-radius: 16px;
+      line-height: 40px;
+      text-align: center;
+      color: green;
+      font-size: 20px; }
+
+.bag {
+  width: 100%;
+  height: 100%; }
+  .bag .bg {
+    width: 100%;
+    height: 100%; }
+
+.jo, .fri {
+  display: none; }
+
+.lov, .jo, .fri {
+  width: 100%;
+  height: 100%; }
+  .lov .bag1, .lov .bag2, .lov .bag3, .lov .bag4, .lov .bag5, .lov .bag6, .jo .bag1, .jo .bag2, .jo .bag3, .jo .bag4, .jo .bag5, .jo .bag6, .fri .bag1, .fri .bag2, .fri .bag3, .fri .bag4, .fri .bag5, .fri .bag6 {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .lov .bag1 ul, .lov .bag2 ul, .lov .bag3 ul, .lov .bag4 ul, .lov .bag5 ul, .lov .bag6 ul, .jo .bag1 ul, .jo .bag2 ul, .jo .bag3 ul, .jo .bag4 ul, .jo .bag5 ul, .jo .bag6 ul, .fri .bag1 ul, .fri .bag2 ul, .fri .bag3 ul, .fri .bag4 ul, .fri .bag5 ul, .fri .bag6 ul {
+      width: 50%;
+      height: 100px;
+      line-height: 25px;
+      position: absolute;
+      right: 0;
+      top: 30%;
+      font-size: 12px; }
+      .lov .bag1 ul li, .lov .bag2 ul li, .lov .bag3 ul li, .lov .bag4 ul li, .lov .bag5 ul li, .lov .bag6 ul li, .jo .bag1 ul li, .jo .bag2 ul li, .jo .bag3 ul li, .jo .bag4 ul li, .jo .bag5 ul li, .jo .bag6 ul li, .fri .bag1 ul li, .fri .bag2 ul li, .fri .bag3 ul li, .fri .bag4 ul li, .fri .bag5 ul li, .fri .bag6 ul li {
+        list-style: none;
+        color: green; }
+  .lov .bag1, .jo .bag1, .fri .bag1 {
+    background: url(../img/love1.png);
+    background-size: 100% 100%; }
+  .lov .bag2, .jo .bag2, .fri .bag2 {
+    background: url(../img/love2.png);
+    background-size: 100% 100%;
+    display: none; }
+  .lov .bag3, .jo .bag3, .fri .bag3 {
+    background: url(../img/job1.png);
+    background-size: 100% 100%; }
+  .lov .bag4, .jo .bag4, .fri .bag4 {
+    background: url(../img/job2.png);
+    background-size: 100% 100%; }
+  .lov .bag5, .jo .bag5, .fri .bag5 {
+    background: url(../img/friend1.png);
+    background-size: 100% 100%; }
+  .lov .bag6, .jo .bag6, .fri .bag6 {
+    background: url(../img/friend2.png);
+    background-size: 100% 100%; }
+
+.target {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../img/target.png);
+  background-size: 100% 100%; }
+  .target h2 {
+    color: orange;
+    position: absolute;
+    right: 15%;
+    top: 55px;
+    transform: rotateZ(25deg);
+    font-size: 20px; }
+  .target .fx {
+    width: 70%;
+    height: 40px;
+    border: 2px solid green;
+    border-radius: 20px;
+    text-decoration: none;
+    position: absolute;
+    left: 15%;
+    bottom: 30px;
+    color: green;
+    text-align: center;
+    line-height: 40px; }

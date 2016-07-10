@@ -1,0 +1,389 @@
+@charset "utf-8";
+@import url(reset.css);
+
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+img{
+	max-width:100%;
+}
+@mixin full{
+	width:100%;
+	height:100%;
+}
+body,html,.chioce{
+	@include full;
+	overflow:hidden;
+}
+@mixin pos($val:relative){
+	position:$val;
+}
+body{
+	-webkit-user-select:none;
+	-webkit-font-size-adjust:none;
+	-webkit-tap-heightlight-color:rgba(0,0,0,0);
+	background:url(../img/3.png);
+}
+
+
+//---------chioce---------
+	//-------love--------
+.chioce{
+	@include full;
+	@include pos;
+	h3{
+		height:40%;
+		width:100%;
+	}
+	.pic{
+		width:100%;
+		height:60%;
+	}
+	.box{
+		display:-webkit-box;
+		height:100%;
+	}
+	.love{
+		@include full;
+		h3{
+			background:url(../img/4_03.png) no-repeat center center;
+			background-size:70% 30%;
+		}
+		.pic{
+			background:url(../img/4_07.png) no-repeat center top;
+			background-size:70% 70%;
+		}
+	}
+	.friend{
+		@include full;
+		h3{
+			background:url(../img/6_03.png) no-repeat center center;
+			background-size:70% 30%;
+		}
+		.pic{
+			background:url(../img/6_07.png) no-repeat center top;
+			background-size:70% 70%;
+		}
+	}
+	.job{
+		@include full;
+		h3{
+			background:url(../img/5_03.png) no-repeat center center;
+			background-size:70% 30%;
+		}
+		.pic{
+			background:url(../img/5_07.png) no-repeat center top;
+			background-size:70% 70%;
+		}
+		
+	}
+	
+}
+.questions{
+	@include pos;
+	@include full;
+	display:none;
+	&:first-child{
+		display:block;
+	}
+	h1{
+		width:40px;
+		height:35px;
+		margin:0 auto;
+		@include pos(absolute);
+		bottom:5%;
+		left:50%;
+		margin-left:-20px;
+		img{
+			@include full;
+		}
+	}
+	.boxs{
+		@include full;
+		display:none;
+		&:first-child{
+			display:block;
+		}
+	}
+	.content{
+		@include full;
+		display:-webkit-box;
+		.swiper-wrapper{
+			@include full;
+		}
+		
+	}
+	.timi{
+		@include full;
+		img{
+			@include full;
+		}
+	}
+}
+.project{
+	.boxs1{
+		display:-webkit-box;
+	}
+	.swiper-slide{
+		height:100%;
+		width:100%;
+		img{
+			@include full;
+			box-flex:1;
+		}
+	}
+}
+
+.project{
+	@include pos;
+	@include full;
+	
+	.swiper-button-prev{
+		@include pos(absolute);
+		left:5%;
+		top:50%;
+		width:30px;
+		height:30px;
+		z-index:10;
+	}
+	.swiper-button-next{
+		@include pos(absolute);
+		right:5%;
+		top:50%;
+		width:30px;
+		height:30px;
+		z-index:10;
+	}
+	.btn3{
+		width:40%;
+		height:40px;
+		@include pos(absolute);
+		left:30%;
+		top:85%;
+		color:green;
+		border:1px solid green;
+		border-radius:30px;
+		text-align:center;
+		line-height:40px;
+	}
+}	
+.swiper-button-prev{
+		@include pos(absolute);
+		left:5%;
+		top:50%;
+		width:30px;
+		height:30px;
+		z-index:10;
+	}
+	.swiper-button-next{
+		@include pos(absolute);
+		right:5%;
+		top:50%;
+		width:30px;
+		height:30px;
+		z-index:10;
+	}
+	.btn{
+		width:40%;
+		height:40px;
+		@include pos(absolute);
+		left:30%;
+		top:85%;
+		color:green;
+		border:1px solid green;
+		border-radius:30px;
+		text-align:center;
+		line-height:40px;
+	}
+//-----------result-----------
+.result{
+	display:-webkit-box;
+	@include full;
+	.success{
+		@include full;
+		@include pos;
+		background:url(../img/success.png) no-repeat;
+		background-size:100% 100%;
+		p{
+			width:100%;
+			height:80px;
+			line-height:20px;
+			color:orange;
+			font-size:12px;
+			text-align:center;
+			@include pos(absolute);
+			left:0;
+			top:24%;
+		}
+		.jg1{
+			.again{
+				width:50%;
+				height:40px;
+				@include pos(absolute);
+				left:0;
+				bottom:50px;
+
+			}
+			.xuan{
+				width:50%;
+				height:40px;
+				@include pos(absolute);
+				right:0;
+				bottom:50px;
+
+			}
+			a{
+				display:inline-block;
+				margin-left:10%;
+				width:80%;
+				height:40px;
+				border:2px solid green;
+				border-radius:16px;
+				line-height:40px;
+				text-align:center;
+				color:green;
+				font-size:20px;
+			}
+		}
+		
+	}
+	.fail{
+		@include full;
+		@include pos;
+		background:url(../img/fail.png) no-repeat;
+		background-size:100% 100%;
+		p{
+			width:100%;
+			height:80px;
+			line-height:20px;
+			color:orange;
+			font-size:12px;
+			text-align:center;
+			@include pos(absolute);
+			left:0;
+			top:15%;
+		}
+		.jg2{
+			
+			.again{
+				width:50%;
+				height:40px;
+				@include pos(absolute);
+				left:0;
+				bottom:50px;
+
+			}
+			.huo{
+				width:50%;
+				height:40px;
+				@include pos(absolute);
+				right:0;
+				bottom:50px;
+
+			}
+			a{
+				display:inline-block;
+				margin-left:10%;
+				width:80%;
+				height:40px;
+				border:2px solid green;
+				border-radius:16px;
+				line-height:40px;
+				text-align:center;
+				color:green;
+				font-size:20px;
+			}
+		}
+	}
+}
+
+//-------------bag------------
+.bag{
+	@include full;
+	.bg{
+		@include full;
+	}
+}
+.jo,.fri{
+	display:none;
+}
+.lov,.jo,.fri{
+	@include full;
+	.bag1,.bag2,.bag3,.bag4,.bag5,.bag6{
+		@include full;
+		@include pos;
+		ul{
+			width:50%;
+			height:100px;
+			line-height:25px;
+			@include pos(absolute);
+			right:0;
+			top:30%;
+			font-size:12px;
+			li{
+				list-style:none;
+				color:green;
+			}
+		}
+	}
+	.bag1{
+		background:url(../img/love1.png);
+		background-size:100% 100%;
+	}
+	.bag2{
+		background:url(../img/love2.png);
+		background-size:100% 100%;
+		display:none;
+	}
+	.bag3{
+		background:url(../img/job1.png);
+		background-size:100% 100%;
+	}
+	.bag4{
+		background:url(../img/job2.png);
+		background-size:100% 100%;
+	}
+	.bag5{
+		background:url(../img/friend1.png);
+		background-size:100% 100%;
+	}
+	.bag6{
+		background:url(../img/friend2.png);
+		background-size:100% 100%;
+	}
+}
+
+	
+
+	.target{
+		@include full;
+		@include pos;
+		background:url(../img/target.png);
+		background-size:100% 100%;
+		h2{
+			color:orange;
+			@include pos(absolute);
+			right:15%;
+			top:55px;
+			transform:rotateZ(25deg);
+			font-size:20px;
+		}
+		.fx{
+			width:70%;
+			height:40px;
+			border:2px solid green;
+			border-radius:20px;
+			text-decoration:none;
+			@include pos(absolute);
+			left:15%;
+			bottom:30px;
+			color:green;
+			text-align:center;
+			line-height:40px;
+		}
+	}
+
